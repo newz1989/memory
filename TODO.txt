@@ -1,0 +1,13 @@
+1. Create simple card type
+2. Who will responsible for creating cards(types..etc)
+3. Create first simple area.
+4. Component for card which will interactive
+5. who will responible for handling actions
+
+
+tips:
+
+no any clear vision :
+how start
+how project
+how do any actions all activities in haos
