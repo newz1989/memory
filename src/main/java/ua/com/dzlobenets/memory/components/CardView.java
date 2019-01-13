@@ -39,7 +39,6 @@ public class CardView extends JPanel {
     }
 
     private Border createBorder() {
-        this.setMinimumSize(new Dimension(200, 300));
         return BorderFactory.createLineBorder(Color.BLACK);
     }
 
