@@ -1,17 +1,26 @@
 package ua.com.dzlobenets.memory;
 
-import ua.com.dzlobenets.memory.components.MainView;
-import ua.com.dzlobenets.memory.controller.MainController;
+import javax.swing.*;
+import java.awt.*;
 
 public class Main {
 
-    public static void main(String[] args) {
 
-        new MainController(
-                new MainView()
-        ).startApp();
-        
+    public static void main(String[] args) {
+        SwingUtilities.invokeLater(Main::startApp);
     }
+
+    private static void startApp() {
+
+        final GridBagLayout gridBagLayout = new GridBagLayout();
+        final JFrame frame = new JFrame();
+        frame.setLayout(gridBagLayout);
+
+        MainHelper.initCards(frame);
+        MainHelper.initMainFrame(frame);
+
+    }
+
 }
 
 
